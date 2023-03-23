@@ -11,6 +11,8 @@ const currentScore0 = document.getElementById('current--0');
 const currentScore1 = document.getElementById('current--1');
 const player0 = document.querySelector('.player--0');
 const player1 = document.querySelector('.player--1');
+const name0 = document.getElementById('name--0');
+const name1 = document.getElementById('name--1');
 
 // Initial values
 score0.textContent = 0;
@@ -20,6 +22,10 @@ let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
 let scores = [0, 0];
+let player0Name = prompt('First Name');
+let player1Name = prompt('Second Name');
+name0.textContent = player0Name;
+name1.textContent = player1Name;
 
 // Functions
 const toggleActive = function () {
